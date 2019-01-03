@@ -3,23 +3,24 @@ import React from 'react';
 import { Text, View } from 'react-native';
 
 //Make a component
-const Header = (props) => {
+const Footer = (props) => {
   const { textStyle, viewStyle } = styles;
 
   return (
     <View style={viewStyle}>
-    <Text style={textStyle}> {props.headerText} </Text>
+    <Text style={textStyle}>{props.f1}{props.f2}{props.f3}{props.f4} </Text>
+
     </View>
   );
 };
 
 const styles = {
   viewStyle: {
-    backgroundColor: '#FA8089',
+    backgroundColor: '#FABF48',
     justifyContent: 'center',
     alignItems: 'center',
-    height: 100,
-    paddingTop: 65,
+    height: 80,
+    paddingBottom: 15,
     shadowColor: '#0011000',
     shadowOffset: { width: 1, height: 2 },
     shadowOpacity: 0.1,
@@ -32,4 +33,4 @@ const styles = {
 };
 
 //Make the component available to other parts of the App
-export default Header;
+export default Footer;

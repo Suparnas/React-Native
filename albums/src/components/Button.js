@@ -24,13 +24,12 @@ const styles = {
   buttonStyle: {
     flex: 1,
     alignSelf: 'stretch',
-    backgroundcolor: '#f3532',
-    borderWidth: 1,
+    backgroundcolor: '#f53532',
+    borderWidth: 0,
     borderColor: '#95282f',
-    marginLeft: 5,
-    marginRight: 5
-  }
+    
 
+  }
 };
 
 

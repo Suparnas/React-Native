@@ -7,6 +7,7 @@ import Button from './Button';
 const AlbumDetail = ({ album }) => {
   const { title, artist, thumbnail_image, image, url } = album;
   const {
+    cardStyle,
     thumbnailStyle,
     headerContentStyle,
     thumbnailContainerStyle,
@@ -15,7 +16,7 @@ const AlbumDetail = ({ album }) => {
   } = styles;
 
   return (
-    <Card>
+    <Card style={cardStyle}>
       <CardSection>
         <View style={thumbnailContainerStyle}>
           <Image
@@ -46,6 +47,9 @@ const AlbumDetail = ({ album }) => {
 };
 
 const styles = {
+  cardStyle: {
+
+  },
   headerContentStyle: {
     flexDirection: 'column',
     justifyContent: 'space-around'
@@ -62,9 +66,10 @@ const styles = {
     alignItems: 'center',
     marginLeft: 10,
     marginRight: 10
+
   },
   imageStyle: {
-    height: 300,
+    height: 200,
     flex: 1,
     width: null
   }
